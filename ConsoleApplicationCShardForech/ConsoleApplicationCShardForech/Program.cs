@@ -23,7 +23,22 @@ employees[3] = Employee4;
 employees[4] = Employee5;
 employees[5] = Employee6;
 
+//Mostrar los empleados
+Console.WriteLine("EMPLEADO SIN EL AUMENTO ***********>");
 foreach (var employee in employees)
 {
     Console.WriteLine(employee.ToString());
 }
+
+//Incrementar el salario
+foreach (var employee in employees)
+{
+    employee.Salary=(long)(employee.Salary*1.25);
+}
+Console.WriteLine("EMPLEADO CON EL AUMENTO ***********>");
+
+foreach (var employee in employees)
+{
+    Console.WriteLine(employee.ToString());
+}
+
